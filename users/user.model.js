@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const schema = new Schema({
-    username: { type: String, unique: true, required: true },
-    hash: { type: String, required: true },
-    firstName: { type: String, required: true },
-    lastName: { type: String, required: true },
+    username: { type: String, unique: true, required: false },
+    hash: { type: String, required: false },
+    firstName: { type: String, required: false },
+    lastName: { type: String, required: false },
     avatar: { type: String, required: false },
     status: { type: Boolean, required: false, default: false },
     department: { type: String, required: false },
